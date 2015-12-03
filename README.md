@@ -1,2 +1,2 @@
-# debug
+# debug.
 Repository for debug purposes
