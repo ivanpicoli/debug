@@ -1,11 +1,12 @@
 #!/bin/sh
-module="phantom"
-device="phantom"
+module="phantom_dev"
+device="phantom_dev"
 mode="664"
 
 rm -f /dev/${device}0
 
-major=$(awk "\\$2==\"$module\" {print \\$1}" /proc/devices)
+line=$(sudo cat /proc/devices | grep phantom_dev) 
+major=${line%% *}
 
 mknod /dev/${device}0 c $major 0
 
