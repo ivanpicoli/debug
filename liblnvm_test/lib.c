@@ -5,7 +5,7 @@ int main(){
 	struct nvm_ioctl_info c;
 	int ret, i;
 
-	memset(&c, 0 sizeof(struct nvm_ioctl_info);
+	memset(&c, 0, sizeof(struct nvm_ioctl_info));
 
 	ret = nvm_get_info(&c);
 
