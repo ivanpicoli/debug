@@ -1,4 +1,5 @@
 #include <linux/lightnvm.h>
+#include <liblightnvm.h>
 #include <stdio.h>
 
 int main(){
